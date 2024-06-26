@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS VARIABLES */ 
+:root {
+    --LIGHT_GREEN: hsl(148, 38%, 91%);
+    --GREEN: hsl(169, 82%, 27%);
+    --RED: hsl(0, 66%, 54%);
+    --WHITE: hsl(0, 0%, 100%);
+    --MEDIUM_GREY: hsl(186, 15%, 59%);
+    --DARKGREY: hsl(187, 24%, 22%); 
+}
+
+body {
+    background-color: var(--LIGHT_GREEN);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 1rem;
+    font-family: "Karla", sans-serif;
+
+}
+.contact_card {
+    width: 650px;
+    height: 80vh;
+    background-color: var(--WHITE);
+    border-radius: 13px;
+}
