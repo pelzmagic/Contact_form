@@ -9,16 +9,38 @@
 </head>
 <body>
   <div class="contact_card">
-    <div class="contact_details">
-      <h1>Contact Us</h1>
-      <div class="first_input">
-        <form action="">
-          <label for="First Name">
-            <input type="text" class="first_name_input">
-          </label>
-        </form>
-      </div>
-    </div>
+    <h1>Contact Us</h1>
+      <form action="">
+        <div class="first_input">
+          <div class="first_input_item">
+            <label for="firstName" >First Name<span>*</span></label>
+            <input type="text" class="first_name_input" id="firstName">
+            <p class="error">This field is required</p>
+          </div>
+          <div class="last_input_item">
+            <label for="lastName">Last Name<span>*</span></label>
+            <input type="text" class="last_name_input" id="lastName">
+            <p class="error">This field is required</p>
+          </div>
+        </div>
+        <div class="email_input">
+          <label for="email">Email Address<span>*</span></label>
+          <input type="text" id="email" class="email_input_item">
+          <p class="error">Please enter a valid email address</p>
+        </div>
+        <div class="query_input">
+          <label for="query">Query Type<span>*</span></label>
+          <div class="general_enquiry">
+          <input type="radio" id="query" class="enquiry_input" value="General Enquiry">
+          <label for="query">General Enquiry</label>
+          </div>
+          <div class="support_request">
+            <input type="radio" id="support" class="support_input" value="Support request">
+            <label for="support">Support request</label>
+          </div>
+          <p class="error">Please select a query type</p>
+        </div>
+      </form>
   </div>
 </body>
 </html>
