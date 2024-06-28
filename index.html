@@ -30,6 +30,7 @@
         </div>
         <div class="query_input">
           <label for="query">Query Type<span>*</span></label>
+          <div class="radio_inputs">
           <div class="general_enquiry">
           <input type="radio" id="query" class="enquiry_input" value="General Enquiry">
           <label for="query">General Enquiry</label>
@@ -38,8 +39,22 @@
             <input type="radio" id="support" class="support_input" value="Support request">
             <label for="support">Support request</label>
           </div>
+        </div>
           <p class="error">Please select a query type</p>
         </div>
+        <div class="message_area">
+          <label for="message">Message<span>*</span></label>
+          <textarea name="message_content" id="message" rows="4" class="message_input"></textarea>
+          <p class="error">This field is required</p>
+        </div>
+        <div class="consent_area">
+          <div class="consent_item">
+          <input type="checkbox" class="consent" id="consent_space">
+          <label for="consent_space">I consent to being contacted by the team<span>*</span></label>
+        </div>
+          <p class="error">To submit this form, please consent to being contacted</p>
+        </div>
+        <button type="submit">Submit</button>
       </form>
   </div>
 </body>
