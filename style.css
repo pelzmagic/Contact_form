@@ -24,7 +24,7 @@ body {
     min-height: 100vh;
     font-size: 1rem;
     font-family: "Karla", sans-serif;
-
+    position: relative;
 }
 .contact_card {
     width: 650px;
@@ -54,6 +54,10 @@ h1 {
     margin-top: 5px;
 
 }
+.first_name_input:hover {
+    cursor: pointer;
+    border-color: var(--GREEN);
+}
 .last_name_input {
     height: 33px;
     width: 100%;
@@ -63,6 +67,10 @@ h1 {
     padding: 10px;
     border: 1px solid var(--MEDIUM_GREY);
     margin-top: 5px;
+}
+.last_name_input:hover {
+    cursor: pointer;
+    border-color: var(--GREEN);
 }
 .first_input {
     display: flex;
@@ -85,7 +93,7 @@ span {
     font-family: inherit;
     font-weight: 700;
 }
-.error {
+.first_name_error {
     font-size: 11px;
     font-weight: 700;
     color: var(--RED);
@@ -140,6 +148,9 @@ span {
     padding: .5rem .8rem;
     border-radius: 5px;
 }
+.general_enquiry:hover {
+    background-color:var(--LIGHT_GREEN);
+}
 .support_request {
     cursor: pointer;
     width: 100%;
@@ -149,6 +160,9 @@ span {
     border: 1px solid var(--MEDIUM_GREY);
     padding: .5rem .8rem;
     border-radius: 5px;
+}
+.support_request:hover {
+    background-color: var(--LIGHT_GREEN);
 }
 .enquiry_input label:hover {
     cursor: pointer;
@@ -193,9 +207,6 @@ input[type="radio"]:checked {
     align-items: center;
     gap: 1rem;
 }
-input[type="checkbox"]:checked {
-    background-color: var(--GREEN);
-}
 .consent {
     width: 1rem;
     aspect-ratio: 1;
@@ -204,10 +215,16 @@ input[type="checkbox"]:checked {
     font-size: 13px;
     color: var(--GREEN);
     font-family: inherit;
-    font-weight: 700; 
+    color: var(--MEDIUM_GREY);
+}
+.consent_item label:hover {
+    cursor: pointer;
 }
 .consent_area > .error  {
     margin-top: 10px;
+}
+input[type="checkbox"]:checked {
+    background-color: red;
 }
 button {
     margin-top: 26px;
@@ -223,4 +240,38 @@ button {
 }
 button:hover {
     background: var(--DARKGREY);
+}
+.success_box {
+    width: 330px;
+    height: 70px;
+    background-color: var(--DARKGREY);
+    position: absolute;
+    top: 10px;
+    left: 39.5%;
+    border-radius: 10px;
+}
+.message {
+    color: var(--WHITE);
+    font-size:12px;
+    font-family: inherit;
+    font-weight: 700;
+}
+.success_message {
+    display: flex;
+    gap: 8px;
+    width: 86%;
+    margin: auto;
+    align-items: center;
+    margin-top: 10px;
+}
+.success_message2 {
+    color: var(--MEDIUM_GREY);
+    font-size: 11px;
+    font-family: inherit;
+    width: 85%;
+    margin: auto;
+    margin-top: 13px;
+}
+.hide {
+    display: none;
 }

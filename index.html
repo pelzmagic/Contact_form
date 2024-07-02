@@ -9,24 +9,31 @@
 </head>
 <body>
   <div class="contact_card">
+    <div class="success_box">
+      <div class="success_message">
+        <img src="./assets/images/icon-success-check.svg" alt="success icon" width="15" height="15">
+        <p class="message">Message Sent!</p>
+      </div>
+      <p class="success_message2">Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
     <h1>Contact Us</h1>
-      <form action="">
+      <form action="" id="form">
         <div class="first_input">
           <div class="first_input_item">
             <label for="firstName" >First Name<span>*</span></label>
             <input type="text" class="first_name_input" id="firstName">
-            <p class="error">This field is required</p>
+            <p class="first_name_error hide">This field is required</p>
           </div>
           <div class="last_input_item">
             <label for="lastName">Last Name<span>*</span></label>
             <input type="text" class="last_name_input" id="lastName">
-            <p class="error">This field is required</p>
+            <p class="last_name_error hide">This field is required</p>
           </div>
         </div>
         <div class="email_input">
           <label for="email">Email Address<span>*</span></label>
           <input type="text" id="email" class="email_input_item">
-          <p class="error">Please enter a valid email address</p>
+          <p class="email_error">Please enter a valid email address</p>
         </div>
         <div class="query_input">
           <label for="query">Query Type<span>*</span></label>
@@ -45,7 +52,7 @@
         <div class="message_area">
           <label for="message">Message<span>*</span></label>
           <textarea name="message_content" id="message" rows="4" class="message_input"></textarea>
-          <p class="error">This field is required</p>
+          <p class="message_error">This field is required</p>
         </div>
         <div class="consent_area">
           <div class="consent_item">
@@ -57,5 +64,6 @@
         <button type="submit">Submit</button>
       </form>
   </div>
+<script src="index.js" defer charset="utf-8"></script>
 </body>
 </html>
