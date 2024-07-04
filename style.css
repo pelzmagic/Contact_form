@@ -27,11 +27,11 @@ body {
     position: relative;
 }
 .contact_card {
-    width: 650px;
-    height: 80vh;
     background-color: var(--WHITE);
-    border-radius: 13px;
-    padding: 30px;
+    border-radius: 1em;
+    padding: 2rem;
+    margin: 1rem;
+    border: 1px solid brown;
 }
 h1 {
     color: var(--GREEN);
@@ -53,6 +53,12 @@ h1 {
     border: 1px solid var(--MEDIUM_GREY);
     margin-top: 5px;
 
+}
+.first_name_error {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--RED);
+    margin-top: 5px;
 }
 .first_name_input:hover {
     cursor: pointer;
@@ -76,6 +82,7 @@ h1 {
     display: flex;
     gap: 1rem;
     width: 100%;
+    border: 1px solid red;
 }
 span {
     margin-inline-start: 7px;
@@ -93,7 +100,7 @@ span {
     font-family: inherit;
     font-weight: 700;
 }
-.first_name_error {
+.last_name_error {
     font-size: 11px;
     font-weight: 700;
     color: var(--RED);
@@ -101,6 +108,7 @@ span {
 }
 .email_input {
     margin-top: 14px;
+    border: 1px solid blue;
 }
 .email_input label {
     font-size: 13px;
@@ -118,6 +126,12 @@ span {
     border: 1px solid var(--MEDIUM_GREY);
     margin-top: 5px;
 }
+.email_error {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--RED);
+    margin-top: 5px;
+}
 .general_enquiry {
     width: 50%;
 }
@@ -131,6 +145,13 @@ span {
 }
 .query_input {
     margin-top: 14px;
+    border: 1px solid gold;
+}
+.query_error {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--RED);
+    margin-top: 5px;
 }
 .query_input label {
     font-size: 13px;
@@ -183,6 +204,7 @@ input[type="radio"]:checked {
 }
 .message_area {
     margin-top: 14px;
+    border: 1px solid green;
 }
 .message_area label {
     display: block;
@@ -199,8 +221,15 @@ input[type="radio"]:checked {
     outline: none;
     padding: 10px;
 }
+.message_error {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--RED);
+    margin-top: 5px;
+}
 .consent_area {
     margin-top: 14px;
+    border: 1px solid steelblue;
 }
 .consent_item {
     display: flex;
@@ -210,6 +239,12 @@ input[type="radio"]:checked {
 .consent {
     width: 1rem;
     aspect-ratio: 1;
+}
+.consent_error {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--RED);
+    margin-top: 5px;
 }
 .consent_item label {
     font-size: 13px;
@@ -222,12 +257,15 @@ input[type="radio"]:checked {
 }
 .consent_area > .error  {
     margin-top: 10px;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--RED);
 }
 input[type="checkbox"]:checked {
     background-color: red;
 }
 button {
-    margin-top: 26px;
+    margin-top: 20px;
     width: 100%;
     height: 35px;
     background-color: var(--GREEN);
@@ -246,7 +284,7 @@ button:hover {
     height: 70px;
     background-color: var(--DARKGREY);
     position: absolute;
-    top: 10px;
+    top: 52px;
     left: 39.5%;
     border-radius: 10px;
 }
@@ -273,5 +311,20 @@ button:hover {
     margin-top: 13px;
 }
 .hide {
+    display: none;
+}
+.conceal {
+    display: none;
+}
+.keep {
+    display: none;
+}
+.lock {
+    display: none;
+}
+.hoard {
+    display: none;
+}
+.bury {
     display: none;
 }

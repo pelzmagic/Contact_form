@@ -21,45 +21,45 @@
         <div class="first_input">
           <div class="first_input_item">
             <label for="firstName" >First Name<span>*</span></label>
-            <input type="text" class="first_name_input" id="firstName">
+            <input type="text" class="first_name_input" id="firstName" autocomplete="on">
             <p class="first_name_error hide">This field is required</p>
           </div>
           <div class="last_input_item">
             <label for="lastName">Last Name<span>*</span></label>
-            <input type="text" class="last_name_input" id="lastName">
-            <p class="last_name_error hide">This field is required</p>
+            <input type="text" class="last_name_input" id="lastName" autocomplete="on">
+            <p class="last_name_error conceal">This field is required</p>
           </div>
         </div>
         <div class="email_input">
           <label for="email">Email Address<span>*</span></label>
-          <input type="text" id="email" class="email_input_item">
-          <p class="email_error">Please enter a valid email address</p>
+          <input type="email" id="email" class="email_input_item" autocomplete="on">
+          <p class="email_error keep">Please enter a valid email address</p>
         </div>
         <div class="query_input">
           <label for="query">Query Type<span>*</span></label>
           <div class="radio_inputs">
           <div class="general_enquiry">
-          <input type="radio" id="query" class="enquiry_input" value="General Enquiry">
+          <input type="radio" id="query" class="enquiry_input" value="General Enquiry" name="query-type">
           <label for="query">General Enquiry</label>
           </div>
           <div class="support_request">
-            <input type="radio" id="support" class="support_input" value="Support request">
+            <input type="radio" id="support" class="support_input" value="Support request" name="query-type">
             <label for="support">Support request</label>
           </div>
         </div>
-          <p class="error">Please select a query type</p>
+          <p class="query_error hoard">Please select a query type</p>
         </div>
         <div class="message_area">
           <label for="message">Message<span>*</span></label>
-          <textarea name="message_content" id="message" rows="4" class="message_input"></textarea>
-          <p class="message_error">This field is required</p>
+          <textarea name="message_content" id="message" rows="4" class="message_input" autocomplete="on"></textarea>
+          <p class="message_error lock">This field is required</p>
         </div>
         <div class="consent_area">
           <div class="consent_item">
           <input type="checkbox" class="consent" id="consent_space">
           <label for="consent_space">I consent to being contacted by the team<span>*</span></label>
         </div>
-          <p class="error">To submit this form, please consent to being contacted</p>
+          <p class="consent_error bury">To submit this form, please consent to being contacted</p>
         </div>
         <button type="submit">Submit</button>
       </form>
