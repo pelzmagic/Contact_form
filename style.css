@@ -199,7 +199,10 @@ input[type="radio"] {
     outline: 2px solid var(--GREEN);
     outline-offset: 3px;
 }
-input[type="radio"]:checked {
+input[name="query-type"]:checked {
+    background-color: var(--GREEN);
+}
+input[name="support_query"]:checked {
     background-color: var(--GREEN);
 }
 .message_area {
@@ -262,7 +265,7 @@ input[type="radio"]:checked {
     color: var(--RED);
 }
 input[type="checkbox"]:checked {
-    background-color: red;
+    background-color: var(--GREEN);
 }
 button {
     margin-top: 20px;
@@ -284,9 +287,11 @@ button:hover {
     height: 70px;
     background-color: var(--DARKGREY);
     position: absolute;
-    top: 52px;
+    top: 10px;
     left: 39.5%;
     border-radius: 10px;
+    transform: translateY(50%);
+    transition: transform 350ms linear;
 }
 .message {
     color: var(--WHITE);
@@ -326,5 +331,8 @@ button:hover {
     display: none;
 }
 .bury {
+    display: none;
+}
+.cover {
     display: none;
 }
