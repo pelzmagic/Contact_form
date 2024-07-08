@@ -24,14 +24,13 @@ body {
     min-height: 100vh;
     font-size: 1rem;
     font-family: "Karla", sans-serif;
-    position: relative;
+    /* position: relative; */
 }
 .contact_card {
     background-color: var(--WHITE);
     border-radius: 1em;
     padding: 2rem;
     margin: 1rem;
-    border: 1px solid brown;
 }
 h1 {
     color: var(--GREEN);
@@ -82,7 +81,6 @@ h1 {
     display: flex;
     gap: 1rem;
     width: 100%;
-    border: 1px solid red;
 }
 span {
     margin-inline-start: 7px;
@@ -108,7 +106,6 @@ span {
 }
 .email_input {
     margin-top: 14px;
-    border: 1px solid blue;
 }
 .email_input label {
     font-size: 13px;
@@ -145,7 +142,6 @@ span {
 }
 .query_input {
     margin-top: 14px;
-    border: 1px solid gold;
 }
 .query_error {
     font-size: 11px;
@@ -207,7 +203,6 @@ input[name="support_query"]:checked {
 }
 .message_area {
     margin-top: 14px;
-    border: 1px solid green;
 }
 .message_area label {
     display: block;
@@ -232,7 +227,6 @@ input[name="support_query"]:checked {
 }
 .consent_area {
     margin-top: 14px;
-    border: 1px solid steelblue;
 }
 .consent_item {
     display: flex;
@@ -286,12 +280,12 @@ button:hover {
     width: 330px;
     height: 70px;
     background-color: var(--DARKGREY);
-    position: absolute;
+    position: fixed;
     top: 10px;
     left: 39.5%;
     border-radius: 10px;
-    transform: translateY(50%);
-    transition: transform 350ms linear;
+    transform: translateY(57%);
+    /* transition: all 10s ease-in; */
 }
 .message {
     color: var(--WHITE);

@@ -24,8 +24,6 @@ form.addEventListener("submit", (e) => {
     const email = emailInputItem.value;
     const message = messageInput.value;
 
-    let isValid = true;
-
     if (firstName === '') {
         firstNameError.classList.remove("hide");
     }else {
@@ -55,7 +53,10 @@ form.addEventListener("submit", (e) => {
     } else {
         consentError.classList.remove("bury");
     }
-    if (firstName !== "" && lastName !== "" && email !== "" && email.match(/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/) && firstRadio.checked && secondRadio.checked && consent.checked && message !== "") {
+    if (firstName !== "" && lastName !== "" && email !== "" && email.match(/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/) && (firstRadio.checked || secondRadio.checked) && consent.checked && message !== "") {
         successBox.classList.remove("cover");
+        form.reset();
+    } else {
+        successBox.classList.add("cover");
     }
 });
