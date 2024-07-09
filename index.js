@@ -47,6 +47,9 @@ form.addEventListener("submit", (e) => {
     if (message === "") {
         messageError.classList.remove("lock");
         messageInput.style.borderColor = "red";
+    } else {
+        messageError.classList.add("lock");
+        messageInput.style.borderColor = "green";
     }
     if (consent.checked) {
         consentError.classList.add("bury");
@@ -54,9 +57,9 @@ form.addEventListener("submit", (e) => {
         consentError.classList.remove("bury");
     }
     if (firstName !== "" && lastName !== "" && email !== "" && email.match(/^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})$/) && (firstRadio.checked || secondRadio.checked) && consent.checked && message !== "") {
-        successBox.classList.remove("cover");
+        successBox.classList.remove("hidden");
         form.reset();
     } else {
-        successBox.classList.add("cover");
+        successBox.classList.add("hidden");
     }
 });

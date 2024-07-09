@@ -272,6 +272,7 @@ button {
     font-family: inherit;
     color: var(--WHITE);
     padding: .5rem 0;
+    transition-duration: 350ms;
 }
 button:hover {
     background: var(--DARKGREY);
@@ -280,12 +281,12 @@ button:hover {
     width: 330px;
     height: 70px;
     background-color: var(--DARKGREY);
-    position: fixed;
+    position: absolute;
     top: 10px;
     left: 39.5%;
     border-radius: 10px;
     transform: translateY(57%);
-    /* transition: all 10s ease-in; */
+    transition: transform 7s ease-in;
 }
 .message {
     color: var(--WHITE);
@@ -327,6 +328,6 @@ button:hover {
 .bury {
     display: none;
 }
-.cover {
+.hidden {
     display: none;
 }
