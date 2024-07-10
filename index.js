@@ -5,7 +5,7 @@ const emailInputItem = document.querySelector(".email_input_item");
 const radioInputs = document.querySelector(".radio_inputs");
 const firstRadio = document.querySelector("input[name='query-type']");
 const secondRadio = document.querySelector("input[name='support_query']");
-const consent = document.getElementById('consent_space')
+const consent = document.getElementById('consent_space');
 // const secondRadioChecked = document.querySelector(".support_input:checked");
 const messageInput = document.querySelector(".message_input");
 const firstNameError = document.querySelector(".first_name_error");

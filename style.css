@@ -258,7 +258,7 @@ input[name="support_query"]:checked {
     font-weight: 700;
     color: var(--RED);
 }
-input[type="checkbox"]:checked {
+input[type=checkbox]:checked {
     background-color: var(--GREEN);
 }
 button {
@@ -281,12 +281,11 @@ button:hover {
     width: 330px;
     height: 70px;
     background-color: var(--DARKGREY);
-    position: absolute;
-    top: 10px;
-    left: 39.5%;
+    position: fixed;
+    top:10px;
     border-radius: 10px;
-    transform: translateY(57%);
-    transition: transform 7s ease-in;
+    transform: translateY(40px);
+    transition: transform 10s ease-in;
 }
 .message {
     color: var(--WHITE);
@@ -330,4 +329,28 @@ button:hover {
 }
 .hidden {
     display: none;
+}
+
+@media (max-width: 545px) {
+    h1 {
+        font-size: 1em;
+    }
+    .first_input {
+        flex-direction: column;
+    }
+    .first_input_item {
+        width: 100%;
+    }
+    .last_input_item {
+        width: 100%;
+    }
+    .radio_inputs {
+        flex-direction: column;
+    }
+    .success_box {
+        width:80%;
+        top:0;
+        transform: translateY(0px);
+        transition: transform 350ms ease-in;
+    }
 }
